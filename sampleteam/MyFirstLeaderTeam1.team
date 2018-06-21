@@ -1,0 +1,6 @@
+#Robocode robot team
+#Wed Jun 13 17:34:56 ICT 2018
+team.members=sampleteam.MyFirstLeader,sampleteam.MyFirstLeader,sampleteam.MyFirstDroid,sampleteam.MyFirstDroid,sampleteam.MyFirstDroid
+team.author.name=nh
+robocode.version=1.9.2.6
+team.description=adadad
