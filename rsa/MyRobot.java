@@ -4,6 +4,7 @@ import robocode.*;
 import robocode.tma.TTeamLeaderRobot;
 import robocode.util.Utils;
 import java.awt.Color;
+import java.awt.geom.Point2D;
 import java.io.IOException;
 import java.io.Serializable;
 
@@ -23,7 +24,6 @@ public class MyRobot extends TTeamLeaderRobot {
     @Override
     public void onRun() {
         RobotColors c = new RobotColors();
-
         c.bodyColor = Color.blue;
         c.gunColor = Color.blue;
         c.radarColor = Color.blue;
@@ -31,11 +31,7 @@ public class MyRobot extends TTeamLeaderRobot {
         c.bulletColor = Color.white;
 
         // Set the color of this robot containing the RobotColors
-        setBodyColor(c.bodyColor);
-        setGunColor(c.gunColor);
-        setRadarColor(c.radarColor);
-        setScanColor(c.scanColor);
-        setBulletColor(c.bulletColor);
+        this.initialize();
 
         try {
             // Send RobotColors object to our entire team
@@ -105,29 +101,33 @@ public class MyRobot extends TTeamLeaderRobot {
 
     public void onHitRobot(HitRobotEvent e) {
         if (e.getBearing() > -90.0D && e.getBearing() < 90.0D) {
-            if(isTeammate(e.getName())){
-                this.turnRight(90);
-            }else{
-                this.back(100);
-            }
-
+            this.back(100);
         } else {
-            if(isTeammate(e.getName())){
-                this.turnRight(90);
-            }else{
-                this.ahead(100.0D);
-            }
+            this.ahead(100);
         }
     }
 
     @Override
     public void onHitByBullet(HitByBulletEvent e) {
-        if (e.getBearing() > -90.0D && e.getBearing() < 90.0D) {
-            this.turnRight(90);
-            this.back(100.0D);
-        } else {
-            this.turnRight(90);
-            this.ahead(100.0D);
-        }
+//        if (e.getBearing() > -90.0D && e.getBearing() < 90.0D) {
+//            this.turnRight(90);
+//            this.back(100.0D);
+//        } else {
+//            this.turnRight(90);
+//            this.ahead(100.0D);
+//        }
+
+        this.setMaxVelocity(10);
     }
+
+    private void initialize() {
+        this.setAdjustRadarForGunTurn(true);
+        this.setAdjustGunForRobotTurn(true);
+        this.setBodyColor(new Color(92, 51, 23));
+        this.setGunColor(new Color(69, 139, 116));
+        this.setRadarColor(new Color(210, 105, 30));
+        this.setBulletColor(new Color(255, 211, 155));
+        this.setScanColor(new Color(202, 255, 112));
+    }
+
 }

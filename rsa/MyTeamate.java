@@ -1,17 +1,17 @@
 package rsa;
 
-import robocode.HitByBulletEvent;
-import robocode.HitRobotEvent;
-import robocode.MessageEvent;
-import robocode.ScannedRobotEvent;
+import robocode.*;
 import robocode.tma.TTeamMemberRobot;
 import robocode.util.Utils;
+
+import java.io.IOException;
 
 import static robocode.util.Utils.normalRelativeAngleDegrees;
 
 public class MyTeamate extends TTeamMemberRobot {
     int dist = 100;
-    int turnDirection = 1;
+    String sender;
+
     @Override
     public void run() {
         out.println("MyTeamate is ready.");
@@ -19,14 +19,17 @@ public class MyTeamate extends TTeamMemberRobot {
         this.fire(3.0D);
         this.turnLeft(45);
         this.ahead(400);
-//        while (true){
-//            this.turnLeft(90);
-//            this.ahead(400);
-//        }
+        while (true){
+            this.turnLeft(90);
+            this.ahead(400);
+        }
+
     }
 
     @Override
     public void onMessageReceived(MessageEvent e) {
+
+        this.sender = e.getSender();
         // Fire at a point
         if (e.getMessage() instanceof Point) {
             Point p = (Point) e.getMessage();
@@ -38,12 +41,13 @@ public class MyTeamate extends TTeamMemberRobot {
             // Turn gun to target
             turnGunRight(normalRelativeAngleDegrees(theta - getGunHeading()));
 
-            // Fire hard!
             if(this.getEnergy() > 50){
                 fire(3);
             }else if(this.getEnergy() <= 50){
                 fire(0.5D);
             }
+            // Fire hard!
+
         } // Set our colors
         else if (e.getMessage() instanceof RobotColors) {
             RobotColors c = (RobotColors) e.getMessage();
@@ -76,4 +80,9 @@ public class MyTeamate extends TTeamMemberRobot {
             ahead(100);
         }
     }
+
+    private double distanceTo(double x, double y) {
+        return Math.hypot(x - this.getX(), y - this.getY());
+    }
+
 }

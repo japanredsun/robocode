@@ -1,12 +1,13 @@
 package rsa;
 
+import robocode.BorderSentry;
 import robocode.HitByBulletEvent;
 import robocode.HitRobotEvent;
 import robocode.MessageEvent;
 import robocode.tma.TTeamMemberRobot;
 import robocode.util.Utils;
 
-public class Wally extends TTeamMemberRobot {
+public class Wally extends TTeamMemberRobot{
     boolean peek;
     double moveAmount;
 
@@ -17,11 +18,11 @@ public class Wally extends TTeamMemberRobot {
     public void run() {
         this.moveAmount = Math.max(this.getBattleFieldWidth(), this.getBattleFieldHeight());
         this.peek = false;
-        this.turnRight(this.getHeading() % 90.0D);
+        this.turnLeft(this.getHeading() % 90.0D);
         this.ahead(this.moveAmount);
         this.peek = true;
         this.turnGunRight(90.0D);
-        this.turnLeft(90.0D);
+        this.turnRight(90.0D);
 
         while(true) {
             this.peek = true;
