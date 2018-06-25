@@ -3,6 +3,7 @@ package rsa;
 import java.awt.*;
 import java.awt.geom.Point2D;
 import java.io.IOException;
+import java.io.Serializable;
 import java.util.*;
 import java.util.List;
 
@@ -113,6 +114,8 @@ public class SoloBot extends TTeamLeaderRobot{
         this.fireGunWhenReady();
     }
 
+
+
     private void updateTarget() {
         this.target = null;
         List<SoloBot.RobotData> targets = new ArrayList<>(this.enemyMap.values());
@@ -152,19 +155,21 @@ public class SoloBot extends TTeamLeaderRobot{
     }
 
     private void fireGunWhenReady() {
+
         if (this.target != null) {
-            try {
-                broadcastMessage(new Point(this.target.targetX,  this.target.targetY));
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            double dist = this.distanceTo(this.target.targetX, this.target.targetY);
-            double angle = Math.atan(18.0D / dist);
-            if (Math.abs(this.getGunTurnRemaining()) < angle) {
-                this.setFire(3.0D);
+            if(!isTeammate(target.name)){
+                try {
+                    this.broadcastMessage(new Point(this.target.targetX,this.target.targetY));
+                    double dist = this.distanceTo(this.target.targetX, this.target.targetY);
+                    double angle = Math.atan(18.0D / dist);
+                    if (Math.abs(this.getGunTurnRemaining()) < angle) {
+                        this.setFire(3.0D);
+                    }
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
         }
-
     }
 
     private void moveRobot() {
@@ -281,7 +286,7 @@ public class SoloBot extends TTeamLeaderRobot{
         return Math.min(max, Math.max(min, value));
     }
 
-    class RobotData {
+    public class RobotData implements Serializable {
         final String name;
         double scannedX;
         double scannedY;

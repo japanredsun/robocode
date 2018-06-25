@@ -4,32 +4,29 @@ import robocode.*;
 import robocode.tma.TTeamMemberRobot;
 import robocode.util.Utils;
 
+import java.awt.geom.Point2D;
 import java.io.IOException;
 
 import static robocode.util.Utils.normalRelativeAngleDegrees;
 
 public class MyTeamate extends TTeamMemberRobot {
-    int dist = 100;
-    String sender;
 
     @Override
     public void run() {
         out.println("MyTeamate is ready.");
         this.ahead(200);
         this.fire(3.0D);
-        this.turnLeft(45);
-        this.ahead(400);
+        this.turnRight(90);
+        this.ahead(200);
         while (true){
-            this.turnLeft(90);
-            this.ahead(400);
+            this.ahead(200);
+            this.turnRight(90);
         }
 
     }
 
     @Override
     public void onMessageReceived(MessageEvent e) {
-
-        this.sender = e.getSender();
         // Fire at a point
         if (e.getMessage() instanceof Point) {
             Point p = (Point) e.getMessage();
@@ -41,13 +38,12 @@ public class MyTeamate extends TTeamMemberRobot {
             // Turn gun to target
             turnGunRight(normalRelativeAngleDegrees(theta - getGunHeading()));
 
+            // Fire hard!
             if(this.getEnergy() > 50){
                 fire(3);
             }else if(this.getEnergy() <= 50){
                 fire(0.5D);
             }
-            // Fire hard!
-
         } // Set our colors
         else if (e.getMessage() instanceof RobotColors) {
             RobotColors c = (RobotColors) e.getMessage();
@@ -62,13 +58,14 @@ public class MyTeamate extends TTeamMemberRobot {
 
 
 
-    @Override
-    public void onHitByBullet(HitByBulletEvent e) {
-        this.turnRight(Utils.normalRelativeAngleDegrees(90.0D - (this.getHeading() - e.getHeading())));
-        this.ahead((double)this.dist);
-        this.dist *= -1;
-        this.scan();
-    }
+//
+//    @Override
+//    public void onHitByBullet(HitByBulletEvent e) {
+//        this.turnRight(Utils.normalRelativeAngleDegrees(90.0D - (this.getHeading() - e.getHeading())));
+//        this.ahead((double)this.dist);
+//        this.dist *= -1;
+//        this.scan();
+//    }
 
     @Override
     public void onHitRobot(HitRobotEvent e) {
@@ -79,6 +76,14 @@ public class MyTeamate extends TTeamMemberRobot {
         else {
             ahead(100);
         }
+    }
+
+    private double bearingTo(double heading, double x, double y) {
+        return Utils.normalRelativeAngle(this.angleTo(x, y) - heading);
+    }
+
+    private double angleTo(double x, double y) {
+        return Math.atan2(x - this.getX(), y - this.getY());
     }
 
     private double distanceTo(double x, double y) {

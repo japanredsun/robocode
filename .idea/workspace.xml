@@ -2,16 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="308b8268-b410-462b-8de2-992aac356b4c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/robot.database" afterPath="$PROJECT_DIR$/robot.database" />
       <change beforePath="$PROJECT_DIR$/rsa/MyRobot.class" afterPath="$PROJECT_DIR$/rsa/MyRobot.class" />
       <change beforePath="$PROJECT_DIR$/rsa/MyRobot.java" afterPath="$PROJECT_DIR$/rsa/MyRobot.java" />
+      <change beforePath="$PROJECT_DIR$/rsa/MyRobot.properties" afterPath="$PROJECT_DIR$/rsa/MyRobot.properties" />
       <change beforePath="$PROJECT_DIR$/rsa/MyTeamate.class" afterPath="$PROJECT_DIR$/rsa/MyTeamate.class" />
       <change beforePath="$PROJECT_DIR$/rsa/MyTeamate.java" afterPath="$PROJECT_DIR$/rsa/MyTeamate.java" />
+      <change beforePath="$PROJECT_DIR$/rsa/MyTeamate.properties" afterPath="$PROJECT_DIR$/rsa/MyTeamate.properties" />
+      <change beforePath="$PROJECT_DIR$/rsa/SoloBot$RobotData.class" afterPath="$PROJECT_DIR$/rsa/SoloBot$RobotData.class" />
       <change beforePath="$PROJECT_DIR$/rsa/SoloBot.class" afterPath="$PROJECT_DIR$/rsa/SoloBot.class" />
       <change beforePath="$PROJECT_DIR$/rsa/SoloBot.java" afterPath="$PROJECT_DIR$/rsa/SoloBot.java" />
       <change beforePath="$PROJECT_DIR$/rsa/Wally.class" afterPath="$PROJECT_DIR$/rsa/Wally.class" />
       <change beforePath="$PROJECT_DIR$/rsa/Wally.java" afterPath="$PROJECT_DIR$/rsa/Wally.java" />
-      <change beforePath="$PROJECT_DIR$/sample/SittingDuck.data/count.dat" afterPath="$PROJECT_DIR$/sample/SittingDuck.data/count.dat" />
       <change beforePath="$PROJECT_DIR$/sampleteam/JR.team" afterPath="$PROJECT_DIR$/sampleteam/JR.team" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -30,12 +32,42 @@
       <file leaf-file-name="MyRobot.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rsa/MyRobot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-34">
-              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="238">
+              <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1630#1631#0" expanded="true" />
-                <element signature="e#1696#1697#0" expanded="true" />
+                <element signature="e#1439#1440#0" expanded="true" />
+                <element signature="e#1505#1506#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TTeamLeaderRobot.class" pinned="false" current-in-tab="true">
+        <entry file="jar://$PROJECT_DIR$/../libs/robocode.jar!/robocode/tma/TTeamLeaderRobot.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="25" column="25" lean-forward="true" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SoloBot.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rsa/SoloBot.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="157" column="0" lean-forward="true" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3464#3465#0" expanded="true" />
+                <element signature="e#3536#3537#0" expanded="true" />
+                <element signature="e#10218#10219#0" expanded="true" />
+                <element signature="e#10276#10277#0" expanded="true" />
+                <element signature="e#11967#11968#0" expanded="true" />
+                <element signature="e#12034#12035#0" expanded="true" />
+                <element signature="e#12084#12085#0" expanded="true" />
+                <element signature="e#12151#12152#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -44,8 +76,8 @@
       <file leaf-file-name="BorderGuard.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/samplesentry/BorderGuard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1140">
-              <caret line="575" column="7" lean-forward="true" selection-start-line="575" selection-start-column="7" selection-end-line="575" selection-end-column="7" />
+            <state relative-caret-position="-12">
+              <caret line="302" column="34" lean-forward="false" selection-start-line="302" selection-start-column="34" selection-end-line="302" selection-end-column="34" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#22756#22757#0" expanded="true" />
@@ -58,8 +90,8 @@
       <file leaf-file-name="BorderGuard.class" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/samplesentry/BorderGuard.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="51" column="37" lean-forward="true" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
+            <state relative-caret-position="231">
+              <caret line="254" column="39" lean-forward="true" selection-start-line="254" selection-start-column="39" selection-end-line="254" selection-end-column="39" />
               <folding>
                 <marker date="1528884180908" expanded="false" signature="0:104" ph="/.../" />
                 <marker date="1528884180908" expanded="false" signature="136:557" ph="..." />
@@ -107,58 +139,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Walls.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sample/Walls.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1181">
-              <caret line="88" column="36" lean-forward="false" selection-start-line="88" selection-start-column="36" selection-end-line="88" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyTeamate.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/rsa/MyTeamate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="40" column="33" lean-forward="true" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2311#2312#0" expanded="true" />
-                <element signature="e#2378#2379#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SoloBot.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rsa/SoloBot.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="145" column="17" lean-forward="false" selection-start-line="145" selection-start-column="17" selection-end-line="145" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3435#3436#0" expanded="true" />
-                <element signature="e#3507#3508#0" expanded="true" />
-                <element signature="e#10068#10069#0" expanded="true" />
-                <element signature="e#10126#10127#0" expanded="true" />
-                <element signature="e#11786#11787#0" expanded="true" />
-                <element signature="e#11853#11854#0" expanded="true" />
-                <element signature="e#11903#11904#0" expanded="true" />
-                <element signature="e#11970#11971#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Wally.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rsa/Wally.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+            <state relative-caret-position="85">
+              <caret line="35" column="51" lean-forward="true" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyTeamate.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rsa/MyTeamate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2425#2426#0" expanded="true" />
+                <element signature="e#2492#2493#0" expanded="true" />
+                <element signature="e#2545#2546#0" expanded="true" />
+                <element signature="e#2612#2613#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tracker.class" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sample/Tracker.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="864">
+              <caret line="89" column="5" lean-forward="true" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -188,14 +202,21 @@
         <option value="$PROJECT_DIR$/rsa/RobotColors.java" />
         <option value="$PROJECT_DIR$/rsa/MyRobot2.java" />
         <option value="$PROJECT_DIR$/sample/Walls.java" />
-        <option value="$PROJECT_DIR$/rsa/Wally.java" />
-        <option value="$PROJECT_DIR$/rsa/MyRobot.java" />
         <option value="$PROJECT_DIR$/rsa/main.java" />
-        <option value="$PROJECT_DIR$/rsa/SoloBot.java" />
+        <option value="$PROJECT_DIR$/rsa/RobotData.java" />
         <option value="$PROJECT_DIR$/sampleteam/JR.team" />
+        <option value="$PROJECT_DIR$/rsa/SoloBot.java" />
+        <option value="$PROJECT_DIR$/rsa/MyRobot.java" />
+        <option value="$PROJECT_DIR$/rsa/Wally.java" />
         <option value="$PROJECT_DIR$/rsa/MyTeamate.java" />
       </list>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
@@ -235,6 +256,11 @@
             <path>
               <item name="IntelliJRobot" type="b2602c69:ProjectViewProjectNode" />
               <item name="robots" type="462c0819:PsiDirectoryNode" />
+              <item name="sample" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IntelliJRobot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="robots" type="462c0819:PsiDirectoryNode" />
               <item name="sampleteam" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -252,6 +278,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../libs/roborumble.jar!/" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/robocode/robots/rsa/SoloBot.java" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -402,31 +429,31 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5021322" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32900432" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39935064" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -465,61 +492,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sampleteam/Leader1.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rsa/Point.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sampleteam/RobotColors.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="48" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rsa/RobotColors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/awt/Color.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="196" column="30" lean-forward="false" selection-start-line="196" selection-start-column="30" selection-end-line="196" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rsa/JRTeam">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rsa/JRTeam.team">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -540,14 +517,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="406">
           <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample/Tracker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="89" column="5" lean-forward="true" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -689,14 +658,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sampleteam/Wall.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="47" column="43" lean-forward="true" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sampleteam/Leader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-510">
@@ -790,14 +751,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rsa/MyRobot.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sample/Walls.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
@@ -821,14 +774,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sample/Walls.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1181">
-          <caret line="88" column="36" lean-forward="false" selection-start-line="88" selection-start-column="36" selection-end-line="88" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../libs/robocode.jar!/robocode/BorderSentry.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -845,10 +790,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../libs/robocode.host-1.9.2.6-tma-20180501.jar!/net/sf/robocode/host/proxies/BasicRobotProxy.class">
+    <entry file="file://$PROJECT_DIR$/rsa/Point.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample/Walls.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="91" column="9" lean-forward="true" selection-start-line="89" selection-start-column="8" selection-end-line="91" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sampleteam/Leader1.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-733">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#2147#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sampleteam/Leader.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="49" column="53" lean-forward="true" selection-start-line="42" selection-start-column="12" selection-end-line="49" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#2282#0" expanded="true" />
+            <element signature="e#2107#2108#0" expanded="true" />
+            <element signature="e#2160#2161#0" expanded="true" />
+            <element signature="e#2206#2207#0" expanded="true" />
+            <element signature="e#2278#2279#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sampleteam/Wall.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="661">
+          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding>
+            <element signature="e#1735#1736#0" expanded="true" />
+            <element signature="e#1807#1808#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../libs/robocode.jar!/robocode/BattleRules.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="175" column="16" lean-forward="false" selection-start-line="175" selection-start-column="16" selection-end-line="175" selection-end-column="16" />
+          <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+          <folding>
+            <element signature="e#1119#1120#0" expanded="true" />
+            <element signature="e#1163#1164#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../libs/robocode.host-1.9.2.6-tma-20180501.jar!/net/sf/robocode/host/proxies/BasicRobotProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="294" column="55" lean-forward="false" selection-start-line="294" selection-start-column="55" selection-end-line="294" selection-end-column="55" />
           <folding />
         </state>
       </provider>
@@ -856,31 +863,77 @@
     <entry file="jar://$PROJECT_DIR$/../libs/robocode.jar!/robocode/robotinterfaces/peer/IBasicRobotPeer.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
-          <caret line="36" column="8" lean-forward="false" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+          <caret line="44" column="20" lean-forward="false" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rsa/RobotData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="33" column="32" lean-forward="true" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample/Tracker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="89" column="5" lean-forward="true" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample/TrackFire.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-170">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#1341#0" expanded="true" />
+            <element signature="e#1297#1298#0" expanded="true" />
+            <element signature="e#1337#1338#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/../libs/robocode.jar!/robocode/Robot.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
-          <caret line="236" column="33" lean-forward="false" selection-start-line="236" selection-start-column="33" selection-end-line="236" selection-end-column="33" />
+          <caret line="227" column="42" lean-forward="true" selection-start-line="227" selection-start-column="42" selection-end-line="227" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../libs/robocode.jar!/robocode/tma/TTeamLeaderRobot.class">
+    <entry file="file://$PROJECT_DIR$/rsa/SoloBot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="64" column="16" lean-forward="false" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
+        <state relative-caret-position="374">
+          <caret line="157" column="0" lean-forward="true" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3464#3465#0" expanded="true" />
+            <element signature="e#3536#3537#0" expanded="true" />
+            <element signature="e#10218#10219#0" expanded="true" />
+            <element signature="e#10276#10277#0" expanded="true" />
+            <element signature="e#11967#11968#0" expanded="true" />
+            <element signature="e#12034#12035#0" expanded="true" />
+            <element signature="e#12084#12085#0" expanded="true" />
+            <element signature="e#12151#12152#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rsa/MyRobot.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/samplesentry/BorderGuard.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="51" column="37" lean-forward="true" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
+        <state relative-caret-position="231">
+          <caret line="254" column="39" lean-forward="true" selection-start-line="254" selection-start-column="39" selection-end-line="254" selection-end-column="39" />
           <folding>
             <marker date="1528884180908" expanded="false" signature="0:104" ph="/.../" />
             <marker date="1528884180908" expanded="false" signature="136:557" ph="..." />
@@ -917,26 +970,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/samplesentry/BorderGuard.java">
+    <entry file="file://$PROJECT_DIR$/rsa/MyTeamate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="575" column="7" lean-forward="true" selection-start-line="575" selection-start-column="7" selection-end-line="575" selection-end-column="7" />
+        <state relative-caret-position="297">
+          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#22756#22757#0" expanded="true" />
-            <element signature="e#22805#22806#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2425#2426#0" expanded="true" />
+            <element signature="e#2492#2493#0" expanded="true" />
+            <element signature="e#2545#2546#0" expanded="true" />
+            <element signature="e#2612#2613#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rsa/MyRobot.java">
+    <entry file="file://$PROJECT_DIR$/rsa/Wally.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="85">
+          <caret line="35" column="51" lean-forward="true" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1630#1631#0" expanded="true" />
-            <element signature="e#1696#1697#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -949,43 +1002,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rsa/SoloBot.java">
+    <entry file="file://$PROJECT_DIR$/samplesentry/BorderGuard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="145" column="17" lean-forward="false" selection-start-line="145" selection-start-column="17" selection-end-line="145" selection-end-column="17" />
+        <state relative-caret-position="-12">
+          <caret line="302" column="34" lean-forward="false" selection-start-line="302" selection-start-column="34" selection-end-line="302" selection-end-column="34" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3435#3436#0" expanded="true" />
-            <element signature="e#3507#3508#0" expanded="true" />
-            <element signature="e#10068#10069#0" expanded="true" />
-            <element signature="e#10126#10127#0" expanded="true" />
-            <element signature="e#11786#11787#0" expanded="true" />
-            <element signature="e#11853#11854#0" expanded="true" />
-            <element signature="e#11903#11904#0" expanded="true" />
-            <element signature="e#11970#11971#0" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#22756#22757#0" expanded="true" />
+            <element signature="e#22805#22806#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rsa/Wally.java">
+    <entry file="file://$PROJECT_DIR$/rsa/MyRobot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        <state relative-caret-position="238">
+          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1439#1440#0" expanded="true" />
+            <element signature="e#1505#1506#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rsa/MyTeamate.java">
+    <entry file="jar://$PROJECT_DIR$/../libs/robocode.jar!/robocode/tma/TTeamLeaderRobot.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="40" column="33" lean-forward="true" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2311#2312#0" expanded="true" />
-            <element signature="e#2378#2379#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="136">
+          <caret line="25" column="25" lean-forward="true" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>

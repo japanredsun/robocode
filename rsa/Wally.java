@@ -40,7 +40,12 @@ public class Wally extends TTeamMemberRobot{
             double dy = p.getY() - this.getY();
             double theta = Math.toDegrees(Math.atan2(dx, dy));
             this.turnGunRight(Utils.normalRelativeAngleDegrees(theta - this.getGunHeading()));
-            this.fire(2.0D);
+            if(this.getEnergy() > 50){
+                this.fire(3.0D);
+            }else if(this.getEnergy() <= 50){
+                this.fire(1.0D);
+            }
+
         } else if (e.getMessage() instanceof RobotColors) {
             RobotColors c = (RobotColors)e.getMessage();
             this.setBodyColor(c.bodyColor);

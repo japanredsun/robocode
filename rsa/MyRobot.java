@@ -7,6 +7,7 @@ import java.awt.Color;
 import java.awt.geom.Point2D;
 import java.io.IOException;
 import java.io.Serializable;
+import java.util.concurrent.ThreadLocalRandom;
 
 import static robocode.util.Utils.normalRelativeAngleDegrees;
 
@@ -30,32 +31,23 @@ public class MyRobot extends TTeamLeaderRobot {
         c.scanColor = Color.yellow;
         c.bulletColor = Color.white;
 
-        // Set the color of this robot containing the RobotColors
-        this.initialize();
-
         try {
             // Send RobotColors object to our entire team
             broadcastMessage(c);
         } catch (IOException ignored) {}
-        moveAmount = Math.max(getBattleFieldWidth(), getBattleFieldHeight());
-        // Initialize peek to false
-        peek = false;
-
-        // turnLeft to face a wall.
-        // getHeading() % 90 means the remainder of
-        // getHeading() divided by 90.
-        turnLeft(getHeading() % 90);
-        ahead(moveAmount);
-        // Turn the gun to turn right 90 degrees.
-        peek = true;
-        turnRight(180);
-        while (true){
-            setMaxVelocity(5);
-            // Start moving (and turning)
-            peek = true;
-            ahead(moveAmount);
-            peek = false;
-            turnRight(180);
+        this.initialize();
+        this.moveAmount = Math.max(this.getBattleFieldWidth(), this.getBattleFieldHeight());
+        this.peek = false;
+        this.turnLeft(this.getHeading() % 90.0D);
+        this.ahead(this.moveAmount);
+        this.peek = true;
+        this.turnGunRight(90.0D);
+        this.turnRight(90.0D);
+        while(true) {
+            this.peek = true;
+            this.ahead(this.moveAmount);
+            this.peek = false;
+            this.turnLeft(180.0D);
         }
     }
 
@@ -70,8 +62,8 @@ public class MyRobot extends TTeamLeaderRobot {
         if (isTeammate(e.getName())) {
             return;
         }
-            double enemyBearing = this.getHeading() + e.getBearing();
-            // Calculate enemy's position
+        double enemyBearing = this.getHeading() + e.getBearing();
+//             Calculate enemy's position
             enemyX = getX() + e.getDistance() * Math.sin(Math.toRadians(enemyBearing));
             enemyY = getY() + e.getDistance() * Math.cos(Math.toRadians(enemyBearing));
 
@@ -82,7 +74,7 @@ public class MyRobot extends TTeamLeaderRobot {
 
             // Turn gun to target
             turnGunRight(normalRelativeAngleDegrees(theta - getGunHeading()));
-            // Fire hard!
+//             Fire hard!
             if(this.getEnergy() > 50){
                 fire(3);
             }else if(this.getEnergy() <= 50){
@@ -92,6 +84,7 @@ public class MyRobot extends TTeamLeaderRobot {
         try {
             // Send enemy position to teammates
             broadcastMessage(new Point(enemyX, enemyY));
+
         } catch (IOException ex) {
             out.println("Unable to send order: ");
             ex.printStackTrace(out);
@@ -109,25 +102,24 @@ public class MyRobot extends TTeamLeaderRobot {
 
     @Override
     public void onHitByBullet(HitByBulletEvent e) {
-//        if (e.getBearing() > -90.0D && e.getBearing() < 90.0D) {
-//            this.turnRight(90);
-//            this.back(100.0D);
-//        } else {
-//            this.turnRight(90);
-//            this.ahead(100.0D);
-//        }
+        if (e.getBearing() > -90.0D && e.getBearing() < 90.0D) {
+            this.turnRight(90);
+            this.back(100.0D);
+        } else {
+            this.turnRight(90);
+            this.ahead(100.0D);
+        }
 
-        this.setMaxVelocity(10);
+        this.setMaxVelocity(100);
     }
 
     private void initialize() {
-        this.setAdjustRadarForGunTurn(true);
-        this.setAdjustGunForRobotTurn(true);
         this.setBodyColor(new Color(92, 51, 23));
         this.setGunColor(new Color(69, 139, 116));
         this.setRadarColor(new Color(210, 105, 30));
         this.setBulletColor(new Color(255, 211, 155));
         this.setScanColor(new Color(202, 255, 112));
     }
+
 
 }
